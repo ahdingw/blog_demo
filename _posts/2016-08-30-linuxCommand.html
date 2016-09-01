@@ -1,0 +1,19 @@
+---
+layout: default
+title: 你好，世界
+---
+<h2>{{ page.title }}</h2>
+<p>我的第一篇文章
+linux命令：内部命令和外部命令,区别在于性能
+内部命令：写在bash源码中，执行速度快，因为解析内部命令shell不需要创建子进程，
+外部命令：bash之外额外安装的，通常反正*/bin下
+区分方式：type command
+	内部命令：cd is a shell builtin
+	外部命令：shutdown is /sbin/shutdown cat is /bin/cat
+帮助命令：--help man info
+--help 
+
+w:显示当前登录用户以及用户正在进行的工作
+
+</p>
+<p>{{ page.date | date_to_string }}</p>
